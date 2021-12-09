@@ -11,6 +11,7 @@ public class Verification {
      * @return
      */
     public static int evaluate(String equation) {
+        
         //Stacks work like list
         Stack<Integer> digits = new Stack<>();  //Operand stack 123456789,10,11,12,13
         Stack<Character> operations = new Stack<>();  //Operator stack +,-,/,*

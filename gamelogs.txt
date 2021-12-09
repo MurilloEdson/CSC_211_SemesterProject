@@ -1,0 +1,5 @@
+Card-24 Game Computer Validation Test: 1----
+User typed: 22
+Computing expression.....   Not Valid Expression
+Score remains: 0
+

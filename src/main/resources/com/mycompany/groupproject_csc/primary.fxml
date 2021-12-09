@@ -7,7 +7,6 @@
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Shadow?>
-<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -15,11 +14,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseEntered="#timeStart" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.groupproject_csc.PrimaryController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: GREY;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.groupproject_csc.PrimaryController">
    <children>
       <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="75.0" prefWidth="600.0">
          <children>
-            <Label fx:id="clock" text="Time : 0:00">
+            <Label fx:id="clock" text="Time : 0:0">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />
                </HBox.margin>
@@ -34,11 +33,14 @@
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
-            <TextField fx:id="gameOutput">
+            <TextField fx:id="gameOutput" alignment="CENTER">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />
-               </HBox.margin></TextField>
-            <Button mnemonicParsing="false" onAction="#refresh" text="Refresh">
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <Button fx:id="mainB" mnemonicParsing="false" onAction="#refresh" text="Start">
                <HBox.margin>
                   <Insets left="10.0" right="10.0" />
                </HBox.margin>
@@ -49,14 +51,11 @@
       </HBox>
       <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0">
          <children>
-            <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: WHITE;" translateX="200.0" visible="false" width="110.0" />
+            <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="160.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: WHITE;" translateX="200.0" visible="false" width="110.0" />
             <ImageView fx:id="card1" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="94.0">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
-               <image>
-                  <Image url="@../../../../../../../../../Pictures/PlayingCards/png/2_of_diamonds.png" />
-               </image>
                <effect>
                   <Lighting>
                      <bumpInput>
@@ -68,14 +67,11 @@
                   </Lighting>
                </effect>
             </ImageView>
-            <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: WHITE;" translateX="100.0" visible="false" width="110.0" />
+            <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="160.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: WHITE;" translateX="100.0" visible="false" width="110.0" />
             <ImageView fx:id="card2" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
-               <image>
-                  <Image url="@../../../../../../../../../Pictures/PlayingCards/png/8_of_clubs.png" />
-               </image>
                <effect>
                   <Lighting>
                      <bumpInput>
@@ -87,14 +83,11 @@
                   </Lighting>
                </effect>
             </ImageView>
-            <Rectangle fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: WHITE;" visible="false" width="110.0" />
+            <Rectangle fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="160.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: WHITE;" visible="false" width="110.0" />
             <ImageView fx:id="card3" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="-106.0">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
-               <image>
-                  <Image url="@../../../../../../../../../Pictures/PlayingCards/png/king_of_diamonds.png" />
-               </image>
                <effect>
                   <Lighting>
                      <bumpInput>
@@ -106,14 +99,11 @@
                   </Lighting>
                </effect>
             </ImageView>
-            <Rectangle fx:id="rect4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="150.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: WHITE;" translateX="-100.0" visible="false" width="110.0" />
+            <Rectangle fx:id="rect4" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="160.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: WHITE;" translateX="-100.0" visible="false" width="110.0" />
             <ImageView fx:id="card4" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="-206.0">
                <HBox.margin>
                   <Insets />
                </HBox.margin>
-               <image>
-                  <Image url="@../../../../../../../../../Pictures/PlayingCards/png/queen_of_spades.png" />
-               </image>
                <effect>
                   <Lighting>
                      <bumpInput>
@@ -139,7 +129,10 @@
             <TextField fx:id="userInput">
                <HBox.margin>
                   <Insets left="15.0" right="15.0" />
-               </HBox.margin></TextField>
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
             <Button mnemonicParsing="false" onAction="#verify" text="Verify">
                <HBox.margin>
                   <Insets left="15.0" right="15.0" />
